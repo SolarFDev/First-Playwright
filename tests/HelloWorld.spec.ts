@@ -30,6 +30,5 @@ test.describe('Tests', () => {
         await page.getByRole('link', { name: 'API' }).click();
         await page.getByRole('link', { name: 'errors', exact: true }).click();
         await page.getByRole('link', { name: 'Playwright logo Playwright' }).click();
-
     });
 });
