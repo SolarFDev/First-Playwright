@@ -5,7 +5,7 @@ test.describe('Tests', () => {
        await page.goto('https://playwright.dev/');
     });
 
-    test('has title', async ({ page }) => {      
+    test('First Test', async ({ page }) => {      
         await expect(page).toHaveTitle(/Playwright/);  
         await page.screenshot({ path: 'Page1.png' });
         await page.getByRole('link', { name: 'Docs' }).click();
@@ -19,7 +19,7 @@ test.describe('Tests', () => {
             await page.getByPlaceholder('Search').fill('test');
        });  
 
-    test('test', async ({ page }) => {
+    test('Random Test', async ({ page }) => {
         await page.getByRole('button', { name: 'Search (Control+k)' }).click();
         await page.getByRole('searchbox', { name: 'Search' }).fill('quack');
         await page.getByRole('link', { name: 'Quick Start', exact: true }).click();
